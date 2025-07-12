@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Ashley!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #E6FFE6; /* A light, soft green */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            text-align: center;
+            flex-direction: column;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        .container {
+            background-color: #F0FFF0; /* Slightly lighter green for the card */
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%; /* Make it a bit more responsive */
+            opacity: 0; /* Hidden by default */
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+            border: 2px solid #6B8E23; /* Olive green border */
+            box-sizing: border-box; /* Include padding/border in width */
+        }
+        .hidden {
+            display: none;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #6B8E23; /* Olive green */
+            font-size: 3em;
+            margin-bottom: 20px;
+            word-wrap: break-word; /* Ensure long words break */
+        }
+        h2 {
+            font-family: 'Pacifico', cursive;
+            color: #6B8E23;
+            font-size: 2em;
+            margin-top: 30px;
+            word-wrap: break-word;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+            word-wrap: break-word;
+        }
+        strong {
+            color: #4CAF50; /* A slightly darker green for emphasis */
+        }
+        .password-section {
+            background-color: #D4EDDA; /* A slightly different green for the password box */
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+            border: 1px solid #8BC34A; /* Lime green border */
+            max-width: 500px;
+            width: 90%;
+            box-sizing: border-box;
+        }
+        input[type="password"] {
+            padding: 12px;
+            border: 2px solid #8BC34A; /* Lime green border */
+            border-radius: 8px;
+            font-size: 1.1em;
+            width: calc(80% - 120px); /* Adjusted for better spacing */
+            max-width: 200px; /* Limit input width */
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+            transform: translateY(-2px);
+        }
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #D32F2F; /* Red for incorrect */
+            min-height: 1.5em; /* Reserve space for message */
+        }
+        .signature {
+            font-family: 'Pacifico', cursive;
+            margin-top: 40px;
+            font-size: 1.5em;
+            color: #6B8E23;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.7em;
+            }
+            p {
+                font-size: 1em;
+            }
+            input[type="password"] {
+                width: calc(100% - 10px); /* Full width on small screens */
+                margin-right: 0;
+                margin-bottom: 10px; /* Add space below input */
+            }
+            button {
+                width: 100%; /* Full width button */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="password-section" id="passwordSection">
+        <h1>Hey Ashley!</h1>
+        <p>Before you dive in, guess the password! It's **0712**.</p>
+        <input type="password" id="passwordInput" placeholder="Enter the password">
+        <button onclick="checkPassword()">Enter</button>
+        <p id="message"></p>
+    </div>
+
+    <div class="container hidden" id="content">
+        <h1>Happy Birthday, My Love!</h1>
+        <p>My head's been spinning recently, in the best way possible, and it's all because of you. You've been such a great influence on my life, and you make me want to improve, learn, and get my life together. My mind always finds its way back to you.</p>
+
+        <p>I can still see it so vividly: that moment I watched you perform, perhaps at a concert. Your beauty just amazed me; you stood out from everyone else. It was as if something just clicked in my heart. It made me know why I loved you so much. You were my best friend, and I was in love with you, Ashley, before I even knew it. I recall you were wearing a tie for that performance. Just being able to speak to you, to be close to you, to see you up there. Deep inside, I felt you were my best friend, the one for me. Your beauty continued to draw me in. That gentle voice, all those times we were funny together, those sweet little things you'd do – they all made me fall head over heels in love with you, and I did not even know I was doing it.</p>
+
+        <p>You know, I told my mom so many stories about you, about all the silly things you'd do at school. She even grew to like you just from hearing me talk about you so much.</p>
+
+        <h2>And guess what today is, baby?! It's your birthday, Pretty Eyes.</h2>
+        <p>For all the wild things life does to me and the battles I'm still fighting, my heart still reaches for you, Ashley. It's amazing how deeply someone can be embedded in my head and heart. I didn't fall in love with you because you're nice or beautiful, or because your gorgeous eyes shine when you're happy. It's so much more than that, Ash. It's how you say the silliest things with a straight face and make me laugh even when I feel like everything else is killing me. It's that quiet kindness of yours that quietly disarms me, the way you're guarded with people until you really know them. And it's the deep fact that you've been right beside me at my worst, through so much, when it felt like everyone else vanished.</p>
+
+        <p>I love that music is your second language, that you're so **obsessed with pickles and boba**, that you can nap like it's an Olympic sport, and that you totally get my horror movie obsession. I love the way you dress – always tidy, confident, and respectful. It's not flashy, but it says a lot about your understated beauty. And yeah, I know you get a bit dry when you're exhausted, and touch doesn't come naturally to you. But the way you still reach out, tap my arm, or sit a little closer, even when it doesn't come easily – that means **everything to me**. It makes time stop, in the best way. I know I have my issues, and maybe I can't always provide you with the best financially right now, but I swear, I will always do my absolute best for you. You asked me once if I see you in my future, and my response is still the same, as clear as day: **Yes, baby. I see you in my future so clearly, as if God already placed it in the stars for me.** It was not about you being beautiful or sweet, though you are, always. It's how you look at me. How you care, even when you saw me at my worst, how you make me feel like I'm finally home. I fell in love with your heart, the type that loves deeply and fiercely. I cared because you loved me, even as a friend. You never acted to be something you weren't. If God allows, I'm taking that path with you, always. You are one of a kind, Ashley, and I want to keep doing my best for us, for you, and for everything we do together, always.</p>
+
+        <p>P.S. Happy Birthday, babe. I hope you have the best day and many more birthdays to look forward to. I'll be right by your side every step of the way, you, your family, and us, our moms. I love you so much. Thank you for being the best girl and future wife I could ever ask for! Te amoooo my love!!! </p>
+
+        <p class="signature">With all my love,</p>
+        <p class="signature">Your BoyFriend May:)</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById('passwordInput').value;
+            const messageElement = document.getElementById('message');
+            const passwordSection = document.getElementById('passwordSection');
+            const content = document.getElementById('content');
+
+            // The password is now explicitly set to '0712'
+            const correctPassword = '0712';
+
+            if (passwordInput === correctPassword) {
+                messageElement.style.color = '#4CAF50'; /* Green for success */
+                messageElement.textContent = 'Correct! Happy Birthday, Ashley!';
+                passwordSection.style.display = 'none'; // Hide the password section
+                content.classList.remove('hidden'); // Show the content
+                setTimeout(() => {
+                    content.style.opacity = '1';
+                    content.style.transform = 'translateY(0)';
+                }, 50); // Small delay to allow display change to register before animation
+            } else {
+                messageElement.style.color = '#D32F2F'; /* Red for incorrect */
+                messageElement.textContent = 'Incorrect password. Try again!';
+            }
+        }
+    </script>
+
+</body>
+</html>
